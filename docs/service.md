@@ -52,3 +52,8 @@ export class NinjasController {
   }
   }
 ```
+```ts
+// approximateley what nestjs is doing nehind the  scenes
+const service = new NinjasService()
+const controller = new NinjasController(service)
+```

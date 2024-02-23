@@ -1,3 +1,4 @@
 export class CreateNinjaDto {
-    name: string
+  name: string;
+  weapon: 'katana' | 'nunchuks' | 'sabre' | 'spear' | 'stars';
 }

@@ -27,7 +27,7 @@ export class NinjasController {
   // GET : /ninjas/:id ->nijnas
   @Get(':id')
   getOneNinja(@Param('id') id: string) {
-    return ninjas[parseInt(id) - 1];
+    return this.ninjasService.getoneNinja(+id);
   }
   //  POST : /ninjas ->nijna
   @Post()
